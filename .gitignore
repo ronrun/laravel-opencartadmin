@@ -1,0 +1,4 @@
+/vendor/
+*.code-workspace
+php.bat
+composer.bat

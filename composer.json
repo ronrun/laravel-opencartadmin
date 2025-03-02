@@ -1,0 +1,23 @@
+{
+    "name": "ronrun/laravel-opencartadmin",
+    "description": "Integrate OpenCart Admin with Laravel backend.",
+    "keywords": ["laravel", "opencart", "admin"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ronrun\\LaravelOpencartAdmin\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ronrun/laravel-opencartadmin"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

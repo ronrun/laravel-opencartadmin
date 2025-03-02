@@ -1,8 +1,8 @@
 <?php
 
-namespace Ronrun\LaravelOpencartAdmin;
+namespace Ronrun\Ocadmin;
 
-class LaravelOpencartAdmin
+class Ocadmin
 {
     public function hello()
     {

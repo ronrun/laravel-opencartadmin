@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronrun\LaravelOpencartAdmin\Facades;
+namespace Ronrun\Ocadmin\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

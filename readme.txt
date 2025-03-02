@@ -1,1 +1,3 @@
-php artisan vendor:publish --tag=ocadmin-assets
+For laravel
+composer require ronrun/opencartadmin
+php artisan vendor:publish --tag=opencartadmin-assets

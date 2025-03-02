@@ -1,10 +1,10 @@
 <?php
 
-namespace Ronrun\Ocadmin\Facades;
+namespace Ronrun\OpencartAdmin\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class LaravelOpencartAdmin extends Facade
+class OpencartAdmin extends Facade
 {
     protected static function getFacadeAccessor()
     {

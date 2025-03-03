@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Log;
 
 class OpencartAdminServiceProvider  extends ServiceProvider
 {
+    protected static bool $ignoreRoutes = false;
+
+    public static function ignoreRoutes()
+    {
+        static::$ignoreRoutes = true;
+    }
+
     public function register()
     {
         
@@ -21,11 +28,13 @@ class OpencartAdminServiceProvider  extends ServiceProvider
         View::addLocation($viewPath);
 
         // Routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/admin.php');
-
+        if (!OpencartAdmin::shouldIgnoreRoutes()) {
+            $this->loadRoutesFrom(__DIR__.'/../routes/admin.php');
+        }
+        
         // 發布資源
         $this->publishes([
             __DIR__.'/../public' => public_path('vendor/ocadmin'),
-        ], 'ocadmin-assets');
+        ], 'opencartadmin-assets');
     }
 }

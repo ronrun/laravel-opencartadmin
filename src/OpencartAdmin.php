@@ -4,8 +4,16 @@ namespace Ronrun\OpencartAdmin;
 
 class OpencartAdmin
 {
-    public function hello()
+    protected static bool $ignoreRoutes = false;
+
+    public static function ignoreRoutes()
     {
-        return "Hello from OpenCart package!";
+        static::$ignoreRoutes = true;
     }
+
+    public static function shouldIgnoreRoutes()
+    {
+        return static::$ignoreRoutes;
+    }
+
 }

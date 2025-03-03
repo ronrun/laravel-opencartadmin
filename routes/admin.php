@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('ocadmin')->group(function () {
+Route::prefix('ocadmin')->namespace('Ocadmin')->group(function () {
     Route::get('/', function () {
         return view('ocadmin.dashboard');
     });
